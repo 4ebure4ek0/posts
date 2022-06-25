@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8" />
+        <style>
+
+@import url("http://127.0.0.1:8888/project/menu.css");
+
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+} 
+.screen
+{
+    min-height: 100%;
+    background-color: #24242E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.user
+{
+    font-size: 40px;
+    width: 500px;
+}
+.title
+{
+    font-size: 40px;
+    width: 500px;
+}
+.content
+{
+    font-size: 30px;
+    height: 200px;
+    width: 500px;
+}
+.block
+{
+    background-color: #E2455A;
+    width: 500px;
+    padding: 20px;
+}
+input, textarea
+{
+    width: 100%;
+}
+.submit
+{
+    font-size: 40px;
+}
+        </style>
+    </head>
+    <body>
+       <div class="logo">
+	     <div class="left_panel">журнал</div>
+		<div class="right_panel">
+		    <div class="button">Профиль
+		    </div>
+		    <div class="button">Статьи
+			  <div class="drop_menu">
+				<div class="sub_menu"><a href="http://127.0.0.1:8888/project/get_posts_controller.js">все статьи</a></div>
+				<div class="sub_menu"><a href="http://127.0.0.1:8888/project/add_post.html">добавить статью</a></div>
+			  </div>
+		    </div>
+	      </div>
+        </div>
+        <div class="screen">
+	    <div class="block">
+                <form action="http://127.0.0.1:8888/project/add_post_controller.js" method="post">
+		    <input name="user" type="text" class="user" placeholder="user"/>
+		    <input name="title" type="text" class="title" placeholder="title"/>
+		    <textarea name="content" class="content" placeholder="content"></textarea>
+		    <input type="submit" class="submit"/>
+	        </form>
+	    </div>
+        </div>
+    </body>
+</html>
